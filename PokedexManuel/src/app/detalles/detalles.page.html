@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-title>{{ pokemon?.nombre | titlecase }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="pokemon-container">
+  <ion-card class="pokemon-card">
+    <ion-img class="pokemon-image" [src]="pokemon?.imagen" [alt]="pokemon?.nombre"></ion-img>
+
+    <ion-card-header class="center-text">
+      <ion-card-title>{{ pokemon?.nombre | titlecase }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-grid>
+        <!-- Tipos -->
+        <ion-row>
+          <ion-col class="center-text">
+            <strong>Tipos:</strong>
+            <div class="type-container">
+              <ion-chip *ngFor="let tipo of pokemon?.tipos" [ngClass]="'type-' + tipo.toLowerCase()">
+                {{ tipo }}
+              </ion-chip>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <!-- Habilidades -->
+        <ion-row>
+          <ion-col>
+            <strong>Habilidades:</strong>
+            <ion-list>
+              <ion-item *ngFor="let habilidad of pokemon?.habilidades">
+                {{ habilidad }}
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+
+        <!-- Peso y Altura -->
+        <ion-row>
+          <ion-col class="center-text">
+            <strong>Peso:</strong> {{ pokemon?.peso }} kg
+          </ion-col>
+          <ion-col class="center-text">
+            <strong>Altura:</strong> {{ (pokemon?.altura ?? 0) / 10 | number: '1.1-1' }} m
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

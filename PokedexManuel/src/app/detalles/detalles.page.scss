@@ -1,0 +1,58 @@
+.pokemon-container {
+  --background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.pokemon-card {
+  width: 97%;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.pokemon-image {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 50%;
+  border: 4px solid #ddd;
+  background: white;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.type-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.prueba {
+  background: #78c850;
+}
+
+/* 🔹 Estilos para los tipos de Pokémon */
+.type-fire { background-color: #f57d31; color: white; }
+.type-water { background-color: #6890f0; color: white; }
+.type-grass { background-color: #78c850; color: white; }
+.type-electric { background-color: #f8d030; color: black; }
+.type-ice { background-color: #98d8d8; color: black; }
+.type-fighting { background-color: #c03028; color: white; }
+.type-poison { background-color: #a040a0; color: white; }
+.type-ground { background-color: #e0c068; color: black; }
+.type-flying { background-color: #a890f0; color: black; }
+.type-psychic { background-color: #f85888; color: white; }
+.type-bug { background-color: #a8b820; color: black; }
+.type-rock { background-color: #b8a038; color: white; }
+.type-ghost { background-color: #705898; color: white; }
+.type-dragon { background-color: #7038f8; color: white; }
+.type-dark { background-color: #705848; color: white; }
+.type-steel { background-color: #b8b8d0; color: black; }
+.type-fairy { background-color: #ee99ac; color: black; }

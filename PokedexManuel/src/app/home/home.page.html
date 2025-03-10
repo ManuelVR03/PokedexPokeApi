@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-title slot="start">
+      Pokedex by <strong>Manuel Verdejo</strong>
+    </ion-title>
+    <ion-searchbar slot="end" [(ngModel)]="buscado" (ionInput)="buscarPokemon(buscado)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row class="row">
+      <ion-col size="4" *ngFor="let pokemon of pokemons">
+        <ion-card (click)="detallesPokemon(pokemon)" class="type-{{pokemon.tipos[0]}}">
+          <ion-img [src]="pokemon.imagen" [alt]="pokemon.nombre"></ion-img>
+          <ion-card-header>
+            <ion-card-title>{{ pokemon.nombre | titlecase }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-button (click)="primeraPagina()">Primera</ion-button>
+      <ion-button (click)="paginaAnterior()">Anterior</ion-button>
+    </ion-buttons>
+    <ion-title>Página {{paginaActual}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="paginaSiguiente()">Siguiente</ion-button>
+      <ion-button (click)="ultimaPagina()">Última</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

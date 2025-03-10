@@ -1,0 +1,139 @@
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-searchbar {
+  width: 15%;
+}
+
+ion-card {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+ion-card:hover {
+  transform: scale(1.05);
+}
+
+ion-img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+ion-card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+ion-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+  text-transform: uppercase;
+}
+
+ion-footer ion-toolbar ion-title {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.type-fire {
+  background: linear-gradient(to bottom, #F08030, #FFFFFF);
+}
+
+.type-water {
+  background: linear-gradient(to bottom, #6890F0, #FFFFFF);
+}
+
+.type-grass {
+  background: linear-gradient(to bottom, #78C850, #FFFFFF);
+}
+
+.type-electric {
+  background: linear-gradient(to bottom, #F8D030, #FFFFFF);
+}
+
+.type-ice {
+  background: linear-gradient(to bottom, #98D8D8, #FFFFFF);
+}
+
+.type-fighting {
+  background: linear-gradient(to bottom, #C03028, #FFFFFF);
+}
+
+.type-poison {
+  background: linear-gradient(to bottom, #A040A0, #FFFFFF);
+}
+
+.type-ground {
+  background: linear-gradient(to bottom, #E0C068, #FFFFFF);
+}
+
+.type-flying {
+  background: linear-gradient(to bottom, #A890F0, #FFFFFF);
+}
+
+.type-psychic {
+  background: linear-gradient(to bottom, #F85888, #FFFFFF);
+}
+
+.type-bug {
+  background: linear-gradient(to bottom, #A8B820, #FFFFFF);
+}
+
+.type-rock {
+  background: linear-gradient(to bottom, #B8A038, #FFFFFF);
+}
+
+.type-ghost {
+  background: linear-gradient(to bottom, #705898, #FFFFFF);
+}
+
+.type-dark {
+  background: linear-gradient(to bottom, #705848, #FFFFFF);
+}
+
+.type-dragon {
+  background: linear-gradient(to bottom, #7038F8, #FFFFFF);
+}
+
+.type-steel {
+  background: linear-gradient(to bottom, #B8B8D0, #FFFFFF);
+}
+
+.type-fairy {
+  background: linear-gradient(to bottom, #EE99AC, #FFFFFF);
+}
+
+.type-normal {
+  background: linear-gradient(to bottom, #A8A878, #FFFFFF);
+}
